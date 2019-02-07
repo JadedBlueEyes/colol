@@ -11,4 +11,10 @@ exclude = [
     "logo.png",
 ]
 
+
+homepage = "https://github.com/derpmarine168/colol"
+repository = "https://github.com/derpmarine168/colol"
+readme = "README.md"
+keywords = ["color", "string", "term", "ansi_term", "windows", ""]
+
 [dependencies]
