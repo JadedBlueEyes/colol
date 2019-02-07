@@ -14,6 +14,7 @@ exclude = [
 
 homepage = "https://github.com/derpmarine168/colol"
 repository = "https://github.com/derpmarine168/colol"
+documentation = "https://docs.rs/colol/"
 readme = "README.md"
 keywords = ["color", "string", "term", "ansi_term", "windows"]
 
