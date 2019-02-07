@@ -47,6 +47,7 @@ mod tests {
     fn logo() {
         color!(bold);
         color!(bg_red);
+        color!(white);
         print!("co");
         close_color!(bg_red);
         color!(bg_blue);

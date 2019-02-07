@@ -1,8 +1,9 @@
 # Colol
+
 <img src="logo.png" align="left" width="75"/>
 <p style="text-align: center">A supersimple terminal color library.</p>
 
-![crate version](https://img.shields.io/crates/v/cool.svg)
+![crate version](https://img.shields.io/crates/v/colol.svg)
 
 Colol is a simple, cross-platform color library that works by printing escape codes to the terminal.
 
@@ -10,9 +11,9 @@ Colol is a simple, cross-platform color library that works by printing escape co
 
 Licensed under either of
 
- * Apache License, Version 2.0
+* Apache License, Version 2.0
    ([LICENSE-APACHE](LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
- * MIT license
+* MIT license
    ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 
 at your option.
