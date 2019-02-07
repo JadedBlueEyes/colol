@@ -1,5 +1,6 @@
 pub mod colors;
 
+#[cfg(feature = "colol")]
 #[macro_export]
 macro_rules! color {
     ($name: ident) => {
@@ -7,6 +8,7 @@ macro_rules! color {
     };
 }
 
+#[cfg(feature = "colol")]
 #[macro_export]
 macro_rules! close_color {
     ($name: ident) => {
@@ -14,8 +16,27 @@ macro_rules! close_color {
     };
 }
 
+#[cfg(not(feature = "colol"))]
+#[macro_export]
+macro_rules! color {
+    ($name: ident) => {
+    };
+}
+
+#[cfg(not(feature = "colol"))]
+#[macro_export]
+macro_rules! close_color {
+    ($name: ident) => {
+    };
+}
+
 #[cfg(test)]
 mod tests {
+    #[test]
+    fn is_enabled() {
+      assert_eq!(true, cfg!(feature = "colol"));
+    }
+
     #[test]
     fn basic() {
         color!(blue);

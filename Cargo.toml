@@ -1,6 +1,6 @@
 [package]
 name = "colol"
-version = "0.2.2"
+version = "0.3.0"
 authors = ["DerpMarine <derpmarine168@gmail.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
@@ -19,6 +19,12 @@ readme = "README.md"
 keywords = ["color", "string", "term", "ansi_term", "windows"]
 
 categories = ["command-line-interface"]
+
+[features]
+default = ["colol"]
+
+# used with `#[cfg(feature = "colol")]`.
+colol = []
 
 [dependencies]
 
