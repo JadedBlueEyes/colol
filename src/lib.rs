@@ -24,7 +24,7 @@ mod tests {
     }
 
     #[test]
-    fn closeing_colors() {
+    fn closing_colors() {
         color!(blue);
         println!("Test closing colors!");
         close_color!(blue);
