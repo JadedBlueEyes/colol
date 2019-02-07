@@ -6,4 +6,9 @@ edition = "2018"
 license = "MIT OR Apache-2.0"
 description = "A supersimple terminal color library."
 
+exclude = [
+    ".vscode/*",
+    "logo.png",
+]
+
 [dependencies]
