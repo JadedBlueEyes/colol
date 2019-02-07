@@ -1,6 +1,6 @@
 [package]
 name = "colol"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["DerpMarine <derpmarine168@gmail.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
@@ -23,7 +23,7 @@ categories = ["command-line-interface"]
 
 [badges]
 
-travis-ci = { repository = "derpmarine168/colol", branch = "master" }
+travis-ci = { repository = "derpmarine168/colol/", branch = "master" }
 
-is-it-maintained-issue-resolution = { repository = "https://github.com/derpmarine168/colol" }
-is-it-maintained-open-issues = { repository = "https://github.com/derpmarine168/colol" }
+is-it-maintained-issue-resolution = { repository = "derpmarine168/colol" }
+is-it-maintained-open-issues = { repository = "derpmarine168/colol" }
