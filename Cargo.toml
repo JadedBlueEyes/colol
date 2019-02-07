@@ -18,3 +18,10 @@ readme = "README.md"
 keywords = ["color", "string", "term", "ansi_term", "windows", ""]
 
 [dependencies]
+
+[badges]
+
+travis-ci = { repository = "derpmarine168/colol", branch = "master" }
+
+is-it-maintained-issue-resolution = { repository = "https://github.com/derpmarine168/colol" }
+is-it-maintained-open-issues = { repository = "https://github.com/derpmarine168/colol" }
