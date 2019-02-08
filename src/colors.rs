@@ -1,7 +1,6 @@
 //! See `const COLORS` for a list of all the colors.
 //! Other than that, his module contains internals.
 
-
 /// Generates thestruct defenition for `Colors`.
 macro_rules! make_defs {
   ($($name: ident),+) => (
