@@ -1,8 +1,9 @@
 //! Colol is a supersimple terminal color library.
 //! It's almost completely macro based,
-//! and has little overhead. It consists of a
-//! struct of 2-long arrays of `u8` integers,
-//! and two macros. The first macro, `color!`,
+//! and has little overhead. the things that you'll be seing the most of are
+//! two macros and an initialisation function. All you'll ever need to do with
+//! the init function is `colol::init();`.
+//! The first macro, `color!`,
 //! sets the color or formatting of the terminal.
 //! For example:
 //! ```
