@@ -1,5 +1,14 @@
+//! See `const COLORS` for a list of all the colors.
+//! Other than that, his module contains internals.
+
+
+/// Generates thestruct defenition for `Colors`.
 macro_rules! make_defs {
   ($($name: ident),+) => (
+  /// A struct containing all the different colors.
+  /// Should not be constructed or matched against,
+  /// as any changes to this are not considered to be breaking.
+  /// See `const COLORS` for a list of all the colors.
   pub struct Colors {
     $(
       pub $name: [u8; 2],
@@ -54,6 +63,63 @@ make_defs!(
     bg_lt_white
 );
 
+/// The struct containing the integers for the colors.
+/// Should not be accessed directly, as will be used by
+/// the `color!` and `close_color!` macros.
+/// # Values
+///
+/// ## Formating
+///
+/// - `reset`: Resets the formating of the terminal to default
+/// - `bold`: Formats text to bold.
+/// - `dim`: Formats text to be dim.
+/// - `italic`: Formats text to be italic.
+/// - `underline`: Formats text to be underlined.
+/// - `inverse`: Swaps foreground and background colors of the
+///     terminal.
+/// - `hidden`: Is supposed to hide the text,
+///     however does not on some platforms, and behavior varies.
+/// - `strikethrough`: Is suppsed to format text with a strikethrough,
+///     however does not in some platforms.
+///
+/// ## Foreground Colors
+///
+/// - `black`: Makes text black.
+/// - `red`: Makes text red.
+/// - `green`: Makes text green.
+/// - `yellow`: Makes text yellow.
+/// - `blue`: Makes text blue.
+/// - `magenta`: Makes text magneta.
+/// - `cyan`: Makes text cyan.
+/// - `white`: Makes text white.
+/// - `gray`: Makes text gray. Same light black.
+/// - `grey`: Makes text grey. Same light black.
+/// - `lt_black`: Makes text light black.
+/// - `lt_red`: Makes text light red.
+/// - `lt_green`: Makes text light green.
+/// - `lt_yellow`: Makes text light yellow.
+/// - `lt_blue`: Makes text light blue.
+/// - `lt_magenta`: Makes text light magneta.
+/// - `lt_cyan`: Makes text light cyan.
+/// - `lt_white`: Makes text light white.
+///
+/// ## Background Colors
+/// - `bg_black`: makes the background black.
+/// - `bg_red`: makes the background red.
+/// - `bg_green`: makes the background green.
+/// - `bg_yellow`: makes the background yellow.
+/// - `bg_blue`: makes the background blue.
+/// - `bg_magenta`: makes the background magenta.
+/// - `bg_cyan`: makes the background cyan.
+/// - `bg_white`: makes the background white.
+/// - `bg_lt_black`: makes the background light black.
+/// - `bg_lt_red`: makes the background light red.
+/// - `bg_lt_green`: makes the background light green.
+/// - `bg_lt_yellow`: makes the background light yellow.
+/// - `bg_lt_blue`: makes the background light blue.
+/// - `bg_lt_magenta`: makes the background light magenta.
+/// - `bg_lt_cyan`: makes the background light cyan.
+/// - `bg_lt_white`: makes the background light white.
 pub const COLORS: Colors = Colors {
     reset: [0, 0],
 
