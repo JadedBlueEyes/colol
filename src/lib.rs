@@ -8,6 +8,7 @@
 //! ```
 //! # #[macro_use] extern crate colol;
 //! # fn main() {
+//! # colol::init();
 //! color!(red);
 //! println!("Red text!");
 //! color!(reset);
@@ -21,6 +22,7 @@
 //! ```
 //! # #[macro_use] extern crate colol;
 //! # fn main() {
+//! # colol::init();
 //! color!(red);
 //! color!(bg_green);
 //! println!("Red text with a green background!");
@@ -47,6 +49,7 @@
 //! #   }
 //! # }
 //! # fn main() {
+//! # colol::init();
 //! color!(red);
 //! loopn!(5, {
 //!     println!("Hello world!");
