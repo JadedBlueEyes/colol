@@ -6,6 +6,7 @@
 <a href="https://travis-ci.org/derpmarine168/colol"><img alt="Build Status" src="https://travis-ci.org/derpmarine168/colol.svg?branch=master" /></a>
 <a href="https://isitmaintained.com/project/derpmarine168/colol" title="Average time to resolve an issue"><img src="https://isitmaintained.com/badge/resolution/derpmarine168/colol.svg" alt="Average time to resolve an issue"></a>
 <a href="https://isitmaintained.com/project/derpmarine168/colol" title="Percentage of issues still open"><img src="https://isitmaintained.com/badge/open/derpmarine168/colol.svg" alt="Percentage of issues still open"></a>
+<a href="https://docs.rs/colol/" title="Documentation"><img src="https://docs.rs/colol/badge.svg" alt="Docs"></a>
 </p>
 
 Colol is a simple, cross-platform color library that works by printing escape codes to the terminal.
