@@ -134,6 +134,7 @@ mod tests {
 
     #[test]
     fn basic() {
+        crate::init();
         color!(blue);
         println!("Test basic!");
         color!(reset);
@@ -141,6 +142,7 @@ mod tests {
 
     #[test]
     fn closing_colors() {
+        crate::init();
         color!(blue);
         println!("Test closing colors!");
         close_color!(blue);
@@ -148,6 +150,7 @@ mod tests {
 
     #[test]
     fn multiple_colors() {
+        crate::init();
         color!(blue);
         print!("Test ");
         close_color!(blue);
@@ -161,6 +164,7 @@ mod tests {
 
     #[test]
     fn logo() {
+        crate::init();
         color!(bold);
         color!(bg_red);
         color!(white);
@@ -174,6 +178,7 @@ mod tests {
 
     #[test]
     fn every_color() {
+        crate::init();
         color!(bold);
         println!("bold");
         close_color!(bold);
