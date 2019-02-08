@@ -1,3 +1,61 @@
+//! Colol is a supersimple terminal color library.
+//! It's almost completely macro based,
+//! and has little overhead. It consists of a
+//! struct of 2-long arrays of `u8` integers,
+//! and two macros. The first macro, `color!`,
+//! sets the color or formatting of the terminal.
+//! For example:
+//! ```
+//! # #[macro_use] extern crate colol;
+//! # fn main() {
+//! color!(red);
+//! println!("Red text!");
+//! color!(reset);
+//! # }
+//! ```
+//! However, you may find that you don't want to
+//! reset everything to default. This is where the
+//! second macro comes in: `close_color!`.
+//! This will reset only a specific formatting.
+//! For example:
+//! ```
+//! # #[macro_use] extern crate colol;
+//! # fn main() {
+//! color!(red);
+//! color!(bg_green);
+//! println!("Red text with a green background!");
+//! close_color!(bg_green);
+//! println!("Red text with no green background!");
+//! close_color!(red);
+//! # }
+//! ```
+//! Pretty good!
+//!
+//! The reason this has an advantage over the
+//! multitude of other terminal color crates out there
+//! is that this is significantly more lightweight, and
+//! does not incur much runtime cost at all.
+//! It is also useful for when you are printing out large amounts
+//! of individual strings, like so:
+//! ```
+//! # #[macro_use] extern crate colol;
+//! # macro_rules! loopn {
+//! #   ($n:expr, $body:block) => {
+//! #       for _ in 0..$n {
+//! #           $body
+//! #       }
+//! #   }
+//! # }
+//! # fn main() {
+//! color!(red);
+//! loopn!(5, {
+//!     println!("Hello world!");
+//! });
+//! close_color!(red);
+//! # }
+//! ```
+//! For a list of colors, see `colors::COLORS`.
+
 pub mod colors;
 
 #[cfg(feature = "colol")]

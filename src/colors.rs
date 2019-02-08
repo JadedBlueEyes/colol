@@ -1,7 +1,7 @@
 //! See `const COLORS` for a list of all the colors.
 //! Other than that, his module contains internals.
 
-/// Generates thestruct defenition for `Colors`.
+/// Generates the struct definition for `Colors`.
 macro_rules! make_defs {
   ($($name: ident),+) => (
   /// A struct containing all the different colors.
@@ -67,9 +67,9 @@ make_defs!(
 /// the `color!` and `close_color!` macros.
 /// # Values
 ///
-/// ## Formating
+/// ## Formatting
 ///
-/// - `reset`: Resets the formating of the terminal to default
+/// - `reset`: Resets the formatting of the terminal to default
 /// - `bold`: Formats text to bold.
 /// - `dim`: Formats text to be dim.
 /// - `italic`: Formats text to be italic.
@@ -77,8 +77,8 @@ make_defs!(
 /// - `inverse`: Swaps foreground and background colors of the
 ///     terminal.
 /// - `hidden`: Is supposed to hide the text,
-///     however does not on some platforms, and behavior varies.
-/// - `strikethrough`: Is suppsed to format text with a strikethrough,
+///     however does not on some platforms, and behaviour varies.
+/// - `strikethrough`: Is supposed to format text with a strikethrough,
 ///     however does not in some platforms.
 ///
 /// ## Foreground Colors
@@ -88,7 +88,7 @@ make_defs!(
 /// - `green`: Makes text green.
 /// - `yellow`: Makes text yellow.
 /// - `blue`: Makes text blue.
-/// - `magenta`: Makes text magneta.
+/// - `magenta`: Makes text magenta.
 /// - `cyan`: Makes text cyan.
 /// - `white`: Makes text white.
 /// - `gray`: Makes text gray. Same light black.
@@ -98,7 +98,7 @@ make_defs!(
 /// - `lt_green`: Makes text light green.
 /// - `lt_yellow`: Makes text light yellow.
 /// - `lt_blue`: Makes text light blue.
-/// - `lt_magenta`: Makes text light magneta.
+/// - `lt_magenta`: Makes text light magenta.
 /// - `lt_cyan`: Makes text light cyan.
 /// - `lt_white`: Makes text light white.
 ///
