@@ -58,6 +58,41 @@
 
 pub mod colors;
 
+#[cfg(target_os="windows")]
+extern crate winapi;
+
+/// currently only enables ANSI code support on Windows 10.
+///
+/// This should be called before you use any colors in your crate.
+///
+/// Based on <https://github.com/ogham/rust-ansi-term/blob/master/src/windows.rs>
+#[cfg(target_os="windows")]
+pub fn init() {
+    use winapi::um::processenv::GetStdHandle;
+    use winapi::um::consoleapi::{GetConsoleMode, SetConsoleMode};
+
+    const STD_OUT_HANDLE: u32 = -11i32 as u32;
+    const ENABLE_VIRTUAL_TERMINAL_PROCESSING: u32 = 0x0004;
+
+    unsafe {
+        // https://docs.microsoft.com/en-us/windows/console/getstdhandle
+        let std_out_handle = GetStdHandle(STD_OUT_HANDLE);
+
+        // https://docs.microsoft.com/en-us/windows/console/getconsolemode
+        let mut console_mode: u32 = 0;
+        GetConsoleMode(std_out_handle, &mut console_mode);
+
+        // VT processing not already enabled?
+        if console_mode & ENABLE_VIRTUAL_TERMINAL_PROCESSING == 0 {
+            // https://docs.microsoft.com/en-us/windows/console/setconsolemode
+            SetConsoleMode(std_out_handle, console_mode | ENABLE_VIRTUAL_TERMINAL_PROCESSING);
+        }
+    }
+}
+
+#[cfg(not(target_os="windows"))]
+pub fn init() {}
+
 #[cfg(feature = "colol")]
 #[macro_export]
 macro_rules! color {
