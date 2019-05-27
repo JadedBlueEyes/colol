@@ -3,7 +3,7 @@
 <p align="center">
 <a href="https://crates.io/crates/colol"><img alt="Crate Version" src="https://img.shields.io/crates/v/colol.svg" /></a>
 <a href="https://deps.rs/repo/github/JoelEllis/colol"><img alt="dependency status" src="https://deps.rs/repo/github/JoelEllis/colol/status.svg" /></a>
-<a href="https://travis-ci.org/JoelEllis/colol"><img alt="Build Status" src="https://travis-ci.org/JoelEllis/colol.svg?branch=master" /></a>
+<a href="https://travis-ci.org/derpmarine168/colol"><img alt="Build Status" src="https://travis-ci.org/JoelEllis/colol.svg?branch=master" /></a>
 <a href="https://isitmaintained.com/project/JoelEllis/colol" title="Average time to resolve an issue"><img src="https://isitmaintained.com/badge/resolution/JoelEllis/colol.svg" alt="Average time to resolve an issue"></a>
 <a href="https://isitmaintained.com/project/JoelEllis/colol" title="Percentage of issues still open"><img src="https://isitmaintained.com/badge/open/JoelEllis/colol.svg" alt="Percentage of issues still open"></a>
 <a href="https://docs.rs/colol/" title="Documentation"><img src="https://docs.rs/colol/badge.svg" alt="Docs"></a>
