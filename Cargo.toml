@@ -1,7 +1,7 @@
 [package]
 name = "colol"
 version = "0.3.2"
-authors = ["DerpMarine <derpmarine168@gmail.com>"]
+authors = ["Joel ELlis <joel@ellis.link>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
 description = "A supersimple terminal color library."
@@ -12,8 +12,8 @@ exclude = [
 ]
 
 
-homepage = "https://github.com/derpmarine168/colol"
-repository = "https://github.com/derpmarine168/colol"
+homepage = "https://github.com/JoelEllis/colol"
+repository = "https://github.com/JoelEllis/colol"
 documentation = "https://docs.rs/colol/"
 readme = "README.md"
 keywords = ["color", "string", "term", "ansi_term", "windows"]
@@ -36,5 +36,5 @@ features = ["errhandlingapi", "consoleapi", "processenv"]
 
 travis-ci = { repository = "derpmarine168/colol/", branch = "master" }
 
-is-it-maintained-issue-resolution = { repository = "derpmarine168/colol" }
-is-it-maintained-open-issues = { repository = "derpmarine168/colol" }
+is-it-maintained-issue-resolution = { repository = "JoelEllis/colol" }
+is-it-maintained-open-issues = { repository = "JoelEllis/colol" }
