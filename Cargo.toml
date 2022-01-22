@@ -2,7 +2,7 @@
 name = "colol"
 version = "0.3.2"
 authors = ["Joel ELlis <joel@ellis.link>"]
-edition = "2018"
+edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "A supersimple terminal color library."
 
