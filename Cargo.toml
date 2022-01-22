@@ -29,7 +29,7 @@ colol = []
 
 
 [target.'cfg(target_os="windows")'.dependencies.winapi]
-version = "0.3.4"
+version = "0.3.9"
 features = ["errhandlingapi", "consoleapi", "processenv"]
 
 [badges]
